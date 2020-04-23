@@ -90,7 +90,7 @@ class PaymentMeans implements XmlSerializable
 
         if (!empty($this->dueDate)) {
             $writer->write([
-                Schema::CBC . 'PaymentMeansDueDate' => $this->dueDate->format('Y-m-d'),
+                Schema::CBC . 'PaymentDueDate' => $this->dueDate->format('Y-m-d'),
             ]);
         }
 
